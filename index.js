@@ -93,7 +93,7 @@ server.get('/login', (req, res) => {
                     <input type="password" class="form-control mb-2" name="password" placeholder="Senha">
                     <button class="btn btn-primary">Entrar</button>
                 </form>
-                    <p>Verificar os dados do login no arquivo dadosParaLogar.txt dentro da pasta do projeto.</p>
+                    <p style="color: red;">Verificar os dados de login no arquivo dadosParaLogar.txt dentro da pasta do projeto.</p>
             </body>
         </html>
     `);
@@ -342,4 +342,5 @@ server.get("/logout", (req, res) => {
 server.listen(porta, host, () => {
     console.log(`Servidor rodando em http://${host}:${porta}`);
 });
+
 
